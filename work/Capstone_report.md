@@ -5,6 +5,17 @@
 **Repo:**  
 **Date:**  
 
+
+## Abstract
+
+This study asks which content pages a website manager should investigate first when they show potential engagement problems. Using the FlyRank ML Internship warehouse, the analysis focuses on March 2026 content-performance data and combines observed search and engagement signals at the client-content-page level. A Random Forest ranking model was evaluated using a client-grouped test split and compared with the Week-4 rule-based baseline using Precision@50. The Random Forest achieved an observed Precision@50 of 0.70 compared with 0.00 for the Week-4 baseline, meaning 35 of its top 50 ranked pages were identified as opportunities under the engagement-opportunity proxy. The resulting ranked queue is intended as directional decision support that helps website managers prioritize pages for human investigation, rather than automatically determining which pages should be changed.
+
+Question: Which pages should we investigate?
+Data: FlyRank warehouse + March 2026.
+Method: Random Forest + client-grouped evaluation + Precision@50.
+Result: 0.70 vs 0.00 → 35/50 under the proxy.
+Purpose: Prioritization/decision support, not automatic decisions.
+
 ## 1. Problem framing
 
 This capstone supports the decision of which content pages a website manager should investigate first when they show potential engagement problems.
