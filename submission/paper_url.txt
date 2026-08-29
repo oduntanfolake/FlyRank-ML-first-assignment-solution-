@@ -1,1 +1,2 @@
 PASTE-YOUR-DEPLOYED-PAPER-URL-HERE
+Paper URL:https://oduntanfolake.github.io/FlyRank-ML-first-assignment-solution-/
