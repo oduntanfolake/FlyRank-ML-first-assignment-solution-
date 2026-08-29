@@ -160,6 +160,48 @@ The appropriate interpretation is therefore:
 
 ---
 
+## 7. Ranked Recommendations
+
+The model output is intended to help a website manager prioritize limited review time.
+
+Pages with higher model scores should be investigated first, particularly when they combine strong search visibility with low click capture.
+
+### Recommended action playbook
+
+1. **Investigate high-priority pages**
+   - Start with pages receiving high model scores.
+   - Give additional attention to pages with substantial impressions but very few or zero clicks.
+
+2. **Diagnose before changing**
+   - Review the page title, description, search-intent alignment, and content usefulness.
+   - The model ranking identifies where to look; it does not decide what change should be made.
+
+3. **Use reason codes to guide review**
+   - `low_click_capture` indicates visible pages with little or no observed click activity.
+   - `review_engagement` indicates that the page should be reviewed before any action is taken.
+
+4. **Monitor after intervention**
+   - If a page is changed, evaluate its later performance separately.
+   - Do not treat the model ranking as evidence that an intervention caused an improvement.
+
+### Top-ranked examples
+
+| Rank | Content ID | Impressions | Clicks | Model Score | Recommended Action |
+|---:|---|---:|---:|---:|---|
+| 1 | content_713b157e9c77690a | 24,908 | 0 | 22,596.89 | Investigate engagement |
+| 2 | content_545bb6cc7081ded3 | 122,905 | 287 | 15,197.58 | Review before action |
+| 3 | content_d2eb49b1f5f3fa34 | 14,482 | 0 | 14,755.31 | Investigate engagement |
+| 4 | content_4002467a580a7f98 | 11,973 | 0 | 12,173.97 | Investigate engagement |
+| 5 | content_dc91779c3d085398 | 25,625 | 1 | 11,886.31 | Review before action |
+
+The workflow supported by the model is:
+
+**Rank → Investigate → Diagnose → Act → Monitor**
+
+The ranking is decision support, not an automatic content-change system.
+
+---
+
 ## 8. Reproducibility
 
 The analysis was developed in Google Colab using Python, DuckDB, pandas, NumPy, and scikit-learn, with the FlyRank warehouse accessed through Hugging Face.
