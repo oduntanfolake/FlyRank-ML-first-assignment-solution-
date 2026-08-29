@@ -160,4 +160,6 @@ The reported results in this paper correspond to the documented March 2026 devel
 
 Built on the FlyRank ML Internship dataset.
 
+The analysis was developed as part of the FlyRank ML Internship and uses the FlyRank search and engagement dataset provided for the internship.
+
 Data source: [FlyRank](https://flyrank.ai)
