@@ -1,9 +1,9 @@
 # Capstone Report
 
-**Author:**  
+**Author:**  Oduntan Afolake 
 **Lane:** Engagement Opportunity Scoring  
-**Repo:**  
-**Date:**  
+**Repo:** https://github.com/oduntanfolake/FlyRank-ML-first-assignment-solution-.git
+**Date:**  29/08/2026
 
 
 ## Abstract
